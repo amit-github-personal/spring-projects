@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SSE Emitter Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<nav>
+    <h3>Spring Boot SSE Emitter Tutorial</h3>
+</nav>
+<div class=" container bg-white rounded">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="mt-5 events-panel rounded bg-light shadow-sm ">
+                <p class="fs-1">Add Events</p>
+                <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control" id="event-field" placeholder="Enter some event">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <input type="button" class=" btn btn-secondary form-control" value="Submit" onclick="saveEventData()">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="mt-5 notification-panel rounded bg-light shadow-sm">
+                <p class="info fs-1 text">Add events to see the Changes</p>
+                <div class="notification-list">
+                    <ul id="notification-list" class="notification-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
